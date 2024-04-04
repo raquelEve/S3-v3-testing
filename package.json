@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "test:watch": "jest --watchAll --verbose=false"
+    "test:watch": "jest --watchAll --verbose=false",
+    "test:coverage": "jest --coverage"
   },
   "devDependencies": {
-    "jest": "^29.2.2",
-    "jest-html-reporter": "^3.7.0",
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^3.10.2",
     "jest-junit": "^14.0.1"
   },
   "jest": {
@@ -37,5 +38,11 @@
   },
   "dependencies": {
     "browserify": "^17.0.0"
-  }
+  },
+  "description": "A company in the audiovisual sector has asked us for a web application that will allow their employees to quickly find movies from a large database they have, since the process is currently done manually.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "author": ""
 }
