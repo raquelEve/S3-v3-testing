@@ -21,9 +21,9 @@ function moviesAverageOfDirector(array, director) {
   return result;
 }
 
-//* Exercise 4:  Alphabetic order by title 
+//* Exercise 4:  Alphabetic order by title
 function orderAlphabetically(array) {
-  let result = array.map(film => film.title)
+  let result = array.map((film) => film.title);
   result.sort((a, b) => a.localeCompare(b));
   result = result.slice(0, 20);
   console.log('EXERCICE 4 ->', result);
@@ -41,22 +41,29 @@ function orderByYear(array) {
   return result;
 }
 
-// Exercise 6: Calculate the average of the movies in a category
-function moviesAverageByCategory() {
-
+//* Exercise 6: Calculate the average of the movies in a category
+function moviesAverageByCategory(array, genre) {
+  // empty string or undefined
+  if (!genre) {
+    return 0;
+  }
+  //includes searching for an element in an array
+  let result = array.filter((film) => film.genre.includes(genre));
+  // If there are any movies with the genre, return 0
+  if (result.length === 0) {
+    return 0;
+  }
+  // return a number
+  let total = result.reduce((totalScore, film) => totalScore + film.score, 0);
+  total = Number((total / result.length).toFixed(2));
+  return total;
 }
 
 // Exercise 7: Modify the duration of movies to minutes
-function hoursToMinutes() {
-
-}
+function hoursToMinutes() {}
 
 // Exercise 8: Get the best film of a year
-function bestFilmOfYear() {
-  
-}
-
-
+function bestFilmOfYear() {}
 
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
@@ -69,6 +76,6 @@ if (typeof module !== 'undefined') {
     orderByYear,
     moviesAverageByCategory,
     hoursToMinutes,
-    bestFilmOfYear,
+    bestFilmOfYear
   };
 }
