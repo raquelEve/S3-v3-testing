@@ -1,14 +1,12 @@
 //* Exercise 1: Get the array of all directors.
 function getAllDirectors(array) {
   let result = array.map((film) => film.director);
-  console.log('EXERCICE 1 ->', result);
   return result;
 }
 
 //* Exercise 2: Get the films of a certain director
 function getMoviesFromDirector(array, director) {
   let result = array.filter((film) => film.director === director);
-  console.log('EXERCICE 2 ->', result);
   return result;
 }
 
@@ -17,7 +15,6 @@ function moviesAverageOfDirector(array, director) {
   let result = array.filter((film) => film.director === director);
   let total = result.reduce((totalScore, film) => totalScore + film.score, 0);
   result = Number((total / result.length).toFixed(2));
-  console.log('EXERCICE 3 ->', result);
   return result;
 }
 
@@ -26,7 +23,6 @@ function orderAlphabetically(array) {
   let result = array.map((film) => film.title);
   result.sort((a, b) => a.localeCompare(b));
   result = result.slice(0, 20);
-  console.log('EXERCICE 4 ->', result);
   return result;
 }
 
@@ -36,8 +32,6 @@ function orderByYear(array) {
   let result = newArray.sort((a, b) =>
     a.year == b.year ? a.title.localeCompare(b.title) : a.year - b.year
   );
-
-  console.log('EXERCICE 5 ->', result);
   return result;
 }
 
@@ -86,8 +80,19 @@ function hoursToMinutes(array) {
 }
 
 // Exercise 8: Get the best film of a year
-function bestFilmOfYear() {}
-
+function bestFilmOfYear(array, year) {
+  //result: the first film
+  let result = [{ ...array[0] }];
+  for (i = 0; i < array.length; i++) {
+    //lenght-1: the last position in the array
+    if (i < array.length - 1) {
+      if (result[0].score < array[i + 1].score) {
+        result[0] = { ...array[i + 1] };
+      }
+    }
+  }
+  return result;
+}
 // The following is required to make unit tests work.
 /* Environment setup. Do not modify the below code. */
 if (typeof module !== 'undefined') {
