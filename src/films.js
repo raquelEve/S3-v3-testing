@@ -81,13 +81,14 @@ function hoursToMinutes(array) {
 
 // Exercise 8: Get the best film of a year
 function bestFilmOfYear(array, year) {
-  //result: the first film
-  let result = [{ ...array[0] }];
-  for (i = 0; i < array.length; i++) {
+  let arrCopy = array.filter((film) => film.year === year);
+  //result: the first film with the year
+  let result = [{ ...arrCopy[0] }];
+  for (i = 0; i < arrCopy.length; i++) {
     //lenght-1: the last position in the array
-    if (i < array.length - 1) {
-      if (result[0].score < array[i + 1].score) {
-        result[0] = { ...array[i + 1] };
+    if (i < arrCopy.length - 1) {
+      if (result[0].score < arrCopy[i + 1].score) {
+        result[0] = { ...arrCopy[i + 1] };
       }
     }
   }
