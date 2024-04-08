@@ -96,3 +96,7 @@ You have the following indications from the frontend responsible:
 - You don't need to show the result of each function on the screen. Your goal is to pass the tests. More information on how to program oriented to pass tests at the end of the document.
 
 - Don't forget to include the capture of the test results in the virtual campus.
+
+## Captures of Test Solution
+<img width="576" alt="Captura1" src="https://github.com/raquelEve/S3-v3-testing/assets/6729608/cf34eb19-e7f0-4650-afa3-109b68d2d7e7">
+
