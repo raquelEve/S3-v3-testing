@@ -100,4 +100,7 @@ You have the following indications from the frontend responsible:
 ## Captures of Test Solution
 <img width="576" alt="Captura1" src="https://github.com/raquelEve/S3-v3-testing/assets/6729608/cf34eb19-e7f0-4650-afa3-109b68d2d7e7">
 <img width="575" alt="Captura2" src="https://github.com/raquelEve/S3-v3-testing/assets/6729608/9f1909d0-8af7-420b-99ae-0f24f8f8880b">
+<img width="574" alt="Captura3" src="https://github.com/raquelEve/S3-v3-testing/assets/6729608/1df6f149-5cfd-4fc9-9e64-4ded85c019e5">
+<img width="572" alt="Captura4" src="https://github.com/raquelEve/S3-v3-testing/assets/6729608/5be124e6-26bb-4777-af02-a2fc1e5a2ecd">
+
 
