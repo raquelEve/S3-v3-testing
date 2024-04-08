@@ -99,4 +99,5 @@ You have the following indications from the frontend responsible:
 
 ## Captures of Test Solution
 <img width="576" alt="Captura1" src="https://github.com/raquelEve/S3-v3-testing/assets/6729608/cf34eb19-e7f0-4650-afa3-109b68d2d7e7">
+<img width="575" alt="Captura2" src="https://github.com/raquelEve/S3-v3-testing/assets/6729608/9f1909d0-8af7-420b-99ae-0f24f8f8880b">
 
